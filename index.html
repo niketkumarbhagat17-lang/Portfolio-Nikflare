@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniketNova | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">NIKFLARE</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Niket Kumar Bhagat</span></h1>
+            <p>Frontend Developer | Web Innovator | Problem Solver</p>
+            <p>I'm a <span id="typed-text"></span><span id="cursor">|</span></p>
+            <p>Building responsive, interactive, and visually stunning websites using modern web technologies. Turning ideas into seamless user experiences.</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-card">
+            <div class="about-img">
+                <img src="my img.png" alt="Niket Kumar Bhagat">
+            </div>
+            <div class="about-details">
+                <p><strong>Name:</strong> Niket Kumar Bhagat</p>
+                <p><strong>Location:</strong> Sikkim, India</p>
+                <p><strong>College:</strong> SRM University</p>
+                <p><strong>Course:</strong> BCA, 5th Semester</p>
+                <p><strong>Email:</strong> niketkumarbhagat17@gmail.com</p>
+                <p><strong>Phone:</strong> +91 95934 37879</p>
+                <p><strong>Hobbies:</strong> Coding, Music, Reading</p>
+                <p><strong>About:</strong> Passionate web developer focusing on front-end development using HTML, CSS, JavaScript, and React.js. I love creating modern, responsive, and interactive websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar"><span style="width:95%"></span></div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar"><span style="width:90%"></span></div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar"><span style="width:85%"></span></div>
+            </div>
+            <div class="skill">
+                <h3>React.js</h3>
+                <div class="skill-bar"><span style="width:70%"></span></div>
+            </div>
+            <div class="skill">
+                <h3>Problem Solving</h3>
+                <div class="skill-bar"><span style="width:95%"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <!-- Project Search Bar -->
+        <div class="search-wrapper">
+            <input type="text" id="projectSearch" placeholder="🔍 Search projects...">
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+            <button class="filter-btn" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Websites</button>
+            <button class="filter-btn" data-filter="game">Games</button>
+            <button class="filter-btn" data-filter="store">Stores</button>
+        </div>
+
+        <div class="project-container">
+            <div class="project-card" data-category="web" data-title="Portfolio Website">
+                <h3>Portfolio Website</h3>
+                <p>Responsive portfolio website showcasing my work and skills.</p>
+                <a href="#" target="_blank">View Project</a>
+                <button class="code-btn">🔗 GitHub</button>
+            </div>
+            <div class="project-card" data-category="web" data-title="Landing Page">
+                <h3>Landing Page</h3>
+                <p>Modern landing page with interactive features and animations.</p>
+                <a href="#" target="_blank">View Project</a>
+                <button class="code-btn">🔗 GitHub</button>
+            </div>
+            <div class="project-card" data-category="game" data-title="JS Game">
+                <h3>JS Game</h3>
+                <p>Interactive JavaScript game to enhance user engagement.</p>
+                <a href="#" target="_blank">View Project</a>
+                <button class="code-btn">🔗 GitHub</button>
+            </div>
+            <div class="project-card" data-category="store" data-title="Gaming Store">
+                <h3>Gaming Store</h3>
+                <p>Developed a fully responsive and interactive online gaming store using HTML, CSS, and JavaScript. Features include product listings, dynamic shopping cart, search functionality, and seamless user experience across devices.</p>
+                <a href="https://github.com/niketkumarbhagat17-lang/Game-stores/blob/main/README.md" target="_blank">View Project</a>
+                <button class="code-btn">🔗 GitHub</button>
+            </div>
+        </div>
+
+        <!-- Project Counter -->
+        <div id="projectCounter"></div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-container">
+            <div class="certificate-card">
+                <h3>📜 JavaScript Certificate</h3>
+                <p>Earned from Simplilearn for completing JavaScript course.</p>
+                <a href="https://simpli-web.app.link/e/5QYpaxQG2Yb" target="_blank">View Certificate →</a>
+            </div>
+
+            <!-- NEW CERTIFICATE 1 -->
+            <div class="certificate-card">
+                <h3>Webinar Participation Certificate</h3>
+                <p>Participated in a Career Guidance webinar by Grad Guru Innovation.</p>
+                <a href="NIKET_KUMAR_BHAGAT_certificate (1).pdf" target="_blank">View Certificate →</a>
+            </div>
+
+            <!-- NEW CERTIFICATE 2 -->
+            <div class="certificate-card">
+                <h3>🎨 Web Design Mastery</h3>
+                <p>Certified in Advanced CSS, Flexbox, Grid, and Animations from Udemy. Expert in responsive and interactive designs.</p>
+                <a href="#" target="_blank">View Certificate →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div id="liveDateTime"></div>
+
+        <form id="contactForm">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+            <div id="formError"></div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 NIKFLARE. All rights reserved.</p>
+        <p id="lastUpdated"></p>
+    </footer>
+
+    <button id="backToTop">↑</button>
+
+    <script>
+        // Dark Mode Toggle
+        var toggle = document.getElementById('darkModeToggle');
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+            toggle.textContent = '☀️';
+        }
+        toggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark');
+            var isDark = document.body.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            toggle.textContent = isDark ? '☀️' : '🌙';
+        });
+
+        // Typing Animation
+        var roles = ["Web Developer", "Problem Solver", "Creative Designer", "React Enthusiast"];
+        var roleIndex = 0;
+        var charIndex = 0;
+        var isDeleting = false;
+        var typedSpan = document.getElementById("typed-text");
+        var cursorSpan = document.getElementById("cursor");
+
+        function typeEffect() {
+            var currentRole = roles[roleIndex];
+            if (isDeleting) {
+                typedSpan.textContent = currentRole.substring(0, charIndex--);
+                if (charIndex < 0) {
+                    isDeleting = false;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                }
+            } else {
+                typedSpan.textContent = currentRole.substring(0, charIndex++);
+                if (charIndex === currentRole.length + 2) {
+                    isDeleting = true;
+                }
+            }
+            setTimeout(typeEffect, 80);
+        }
+        typeEffect();
+
+        // Blink cursor
+        setInterval(function() {
+            if (cursorSpan) {
+                cursorSpan.style.opacity = (cursorSpan.style.opacity === '0') ? '1' : '0';
+            }
+        }, 500);
+
+        // Project Filter and Search
+        var filterButtons = document.querySelectorAll('.filter-btn');
+        var projectCards = document.querySelectorAll('.project-card');
+        var projectSearch = document.getElementById('projectSearch');
+        var projectCounter = document.getElementById('projectCounter');
+
+        function filterProjects() {
+            var searchTerm = projectSearch ? projectSearch.value.toLowerCase() : '';
+            var visibleCount = 0;
+            var activeFilter = 'all';
+
+            for (var i = 0; i < filterButtons.length; i++) {
+                var btn = filterButtons[i];
+                if (btn.style.opacity === '1' || btn.style.backgroundColor === 'rgb(233, 69, 96)') {
+                    activeFilter = btn.getAttribute('data-filter');
+                    break;
+                }
+            }
+
+            for (var j = 0; j < projectCards.length; j++) {
+                var card = projectCards[j];
+                var category = card.getAttribute('data-category');
+                var title = card.getAttribute('data-title') || card.querySelector('h3').textContent.toLowerCase();
+                var cardText = card.querySelector('p').textContent.toLowerCase();
+                var matchesSearch = title.includes(searchTerm) || cardText.includes(searchTerm);
+                var matchesFilter = (activeFilter === 'all' || category === activeFilter);
+
+                if (matchesFilter && matchesSearch) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            }
+
+            if (projectCounter) {
+                projectCounter.textContent = 'Showing ' + visibleCount + ' of ' + projectCards.length + ' projects';
+            }
+        }
+
+        for (var k = 0; k < filterButtons.length; k++) {
+            var button = filterButtons[k];
+            button.addEventListener('click', function(btn) {
+                return function() {
+                    for (var i = 0; i < filterButtons.length; i++) {
+                        filterButtons[i].style.opacity = '0.7';
+                        filterButtons[i].style.backgroundColor = '';
+                    }
+                    btn.style.opacity = '1';
+                    btn.style.backgroundColor = '#e94560';
+                    filterProjects();
+                };
+            }(button));
+        }
+
+        if (filterButtons[0]) {
+            filterButtons[0].style.opacity = '1';
+        }
+        filterProjects();
+
+        if (projectSearch) {
+            projectSearch.addEventListener('input', filterProjects);
+        }
+
+        // GitHub Buttons
+        var codeBtns = document.querySelectorAll('.code-btn');
+        for (var g = 0; g < codeBtns.length; g++) {
+            codeBtns[g].addEventListener('click', function() {
+                alert('GitHub repository link will be added soon! 🚀');
+            });
+        }
+
+        // Contact Form Validation
+        var contactForm = document.getElementById('contactForm');
+        var formError = document.getElementById('formError');
+
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var name = document.getElementById('name').value.trim();
+                var email = document.getElementById('email').value.trim();
+                var message = document.getElementById('message').value.trim();
+
+                if (!name) {
+                    formError.textContent = '❌ Please enter your name';
+                    return;
+                }
+                if (!email) {
+                    formError.textContent = '❌ Please enter your email';
+                    return;
+                }
+                if (!validateEmail(email)) {
+                    formError.textContent = '❌ Please enter a valid email';
+                    return;
+                }
+                if (!message) {
+                    formError.textContent = '❌ Please enter your message';
+                    return;
+                }
+                if (message.length < 10) {
+                    formError.textContent = '❌ Message must be at least 10 characters';
+                    return;
+                }
+
+                formError.textContent = '';
+                alert('✅ Thank you ' + name + '! Your message has been sent successfully.');
+                contactForm.reset();
+            });
+        }
+
+        // Live Date/Time
+        var liveDateTime = document.getElementById('liveDateTime');
+        var lastUpdated = document.getElementById('lastUpdated');
+
+        function updateDateTime() {
+            var now = new Date();
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            if (liveDateTime) {
+                liveDateTime.innerHTML = '📅 ' + now.toLocaleDateString('en-US', options);
+            }
+            if (lastUpdated) {
+                lastUpdated.innerHTML = 'Last visited: ' + now.toLocaleString();
+            }
+        }
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+        // Back to Top Button
+        var backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Active Nav Link Highlight
+        var sections = document.querySelectorAll('section');
+        var navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', function() {
+            var current = '';
+            for (var i = 0; i < sections.length; i++) {
+                var section = sections[i];
+                var sectionTop = section.offsetTop;
+                if (window.scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            }
+            for (var j = 0; j < navLinks.length; j++) {
+                var link = navLinks[j];
+                link.style.color = '';
+                if (link.getAttribute('href') === '#' + current) {
+                    link.style.color = '#e94560';
+                }
+            }
+        });
+
+        // Visitor Counter
+        var visitCount = localStorage.getItem('visitCount');
+        if (visitCount === null) {
+            visitCount = 1;
+        } else {
+            visitCount = parseInt(visitCount) + 1;
+        }
+        localStorage.setItem('visitCount', visitCount);
+        console.log('👋 You have visited this portfolio ' + visitCount + ' times');
+
+        // Keyboard Shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'd' || e.key === 'D') {
+                toggle.click();
+            }
+            if (e.key === 'h' || e.key === 'H') {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+            if (e.key === 'c' || e.key === 'C') {
+                document.getElementById('contact').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+        console.log('🚀 Portfolio loaded with all features!');
+    </script>
+
+</body>
+
+</html>
